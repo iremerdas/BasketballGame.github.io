@@ -32,7 +32,7 @@ let hoopImg2;
 let chosenLevel;
 let restartImg;
 
-const minutes = 1;
+const minutes = 2;
 let time = minutes*60;
 const countdownEl = document.querySelector("#countdown"); 
 
@@ -142,17 +142,13 @@ function update() {
     ball.y = Math.max(ball.y + ball.vy, 0);
 
     // Oyunu bitime kontrolü
-    if(time <= 0 && ((user.score < 5 && chosenLevel === "easy") || (user.score < 15 && chosenLevel === "hard"))) {
+    if(time <= 0 && ((user.score < 10 && chosenLevel === "easy") || (user.score < 20 && chosenLevel === "hard"))) {
         gameOver();
-        document.getElementById("restart-button").style.display = "block";
-        restart();
     }
 
     // Oyunu kazanma kontrolü
-    if((user.score >= 5 && chosenLevel === "easy") || (user.score > 15 && chosenLevel === "hard")) {
+    if((user.score >= 10 && chosenLevel === "easy") || (user.score > 20 && chosenLevel === "hard")) {
         winGame();
-        document.getElementById("restart-button").style.display = "block";
-        restart();
     }
 
     // Yere düşme kontrolü
@@ -279,8 +275,6 @@ function gameOver() {
     ball.vy = 0;
     ball.gravity = 0;
     drawText("GAME OVER", csv.width / 3, csv.height / 2, 'white');
-    document.getElementById("restart-button").style.display = "block";
-    restart();
     playFailSound();
 }
 // Oyunu kazanma fonksiyon
@@ -289,8 +283,6 @@ function winGame() {
     ball.vy = 0;
     ball.gravity = 0;
     drawText("!WİN!", csv.width / 2-100, csv.height / 2, 'white');
-    document.getElementById("restart-button").style.display = "block";
-    restart();
     playWinSound();
 }
 // Arka plan rengini değiştiren fonksiyon
@@ -320,11 +312,3 @@ function playWinSound() {
     var winSound = document.getElementById("winSound");
     winSound.play();
 }
-
-function restart() {
-    document.getElementById("level-screen").style.display = "block";
-    document.getElementById("levelButtons").style.display = "block";
-    //document.getElementById("restart-button").style.display = "none";
-    time = minutes * 60;
-}
-
