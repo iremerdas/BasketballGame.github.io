@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BASKETBALL GAME</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div id="home-page">
+    <h1 style="color: brown;">Welcome to Basketball Game</h1>
+    <!--<button id="start-button">Start Game</button>-->
+    <button id="info-button">Info</button>
+    <button id="chooseLevelButton">Choose Level</button>
+  </div>
+
+  <div id="info-screen" style="display:none;">
+    <div id="info-text">
+      <h2>Oyun Kuralları;</h2>
+      <br/>
+      <p>'Space' tuşu topun zıplamasını sağlar.</p><br/>
+      <p>'Q' tuşu topu hızlandırır.</p><br/>
+      <p>'A' tuşu topun sol tarafa hareket etmesini sağlar.</p><br/>
+      <p>'S' tuşu topun sağ tarafa hareket etmesini sağlar.</p><br/>
+      <p>'X' tuşu arkaplan renklerini değiştirerek daha keyifli bir oyun deneyimi amaçlar.</p><br/>
+      <p><em><mark>Zor Seviye seçeneğini seçerseniz 2 dakika içerisinde 30 puan değerinde skor elde etmeniz gerekmektedir.</mark></em></p><br/>
+      <p><em><mark>Kolay Seviye seçeneğini seçerseniz 2 dakika içerisinde 10 puan değerinde skor elde etmeniz gerekmektedir.</mark></em></p><br/>
+      <button id="back-button" onclick="goToHomePagefromInfo()">BACK</button>
+    </div>
+  </div>
+
+  <div id="level-screen" style="display:none;">
+    <div>
+      <div id="levelButtons" style="display: none;">
+        <button id="hardLevelButton">Zor</button>
+        <button id="easyLevelButton">Kolay</button>
+        <div id="start-screen" style="display:none;">
+          <button id="start-button">Start Game</button>
+          <button id="back-button" onclick="goToHomePagefromLevel()">BACK</button>
+        </div>
+        <button id="back-button" onclick="goToHomePagefromLevel()">BACK</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <button id="restart-button" style="display: none;">
+    <img src="images/restart.png" alt="Restart Button">
+  </button>
+  
+
+
+  <audio id="basketSound">
+    <source src="audio/point.wav" type="audio/mpeg">
+  </audio>
+
+  <audio id="wallSound">
+    <source src="audio/bounce.wav" type="audio/mpeg">
+  </audio>
+
+  <audio id="failSound">
+    <source src="audio/fail.wav" type="audio/mpeg">
+  </audio>
+
+  <audio id="winSound">
+    <source src="audio/win.mp3" type="audio/mpeg">
+  </audio>
+
+  <canvas id="board" style="border:2px solid black; display:none;"></canvas>
+  
+  <div class="timer" id="countdown" style="display: none;">02:00</div>
+
+  <script>
+    function goToHomePagefromInfo() {
+        document.getElementById("home-page").style.display = "block";
+        document.getElementById("info-screen").style.display = "none";
+    }
+    function goToHomePagefromLevel() {
+        document.getElementById("level-screen").style.display = "none";
+        document.getElementById("home-page").style.display = "block";
+    }
+
+  </script>
+  <script src="ss.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: black;
+}
+
+#home-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#start-button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#info-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+#start-button:hover {
+    background-color: #45a049;
+}
+#info-button:hover {
+    background-color: #45a049;
+}
+
+#start-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info-screen {
+    display: none; 
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#chooseLevelButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+#chooseLevelButton:hover {
+    background-color: #45a049;
+}
+
+#hardLevelButton, #easyLevelButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#hardLevelButton:hover, #easyLevelButton:hover {
+    background-color: #45a049;
+}
+
+#levelButtons {
+    display: none;
+    margin-top: 500px;
+    padding: 10px 20px;
+    border: none;
+}
+
+#back-button {
+    font-size: 18px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+#back-button:hover {
+    background-color: #45a049;
+}
+
+
+#restart-button {
+    position: absolute;
+    top: 400px;
+    left: 740px;
+    background-color: transparent; 
+    border: none;
+    cursor: pointer; 
+    padding: 0; 
+    display: none; 
+}
+
+
+#board {
+    /*background-color: skyblue;*/
+    background-image: url(images/court.jpg);
+    padding: 0;
+    margin: auto;
+    display: none; /* Anasayfada canvası gizle */
+    width: 1500px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.timer {
+    bottom: 20px; 
+    left: 20px; 
+    background-color: #000;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 8px;
+    color: rgba(214, 107, 20, 0.796);
+}
+
