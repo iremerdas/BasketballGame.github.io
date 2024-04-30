@@ -142,12 +142,12 @@ function update() {
     ball.y = Math.max(ball.y + ball.vy, 0);
 
     // Oyunu bitime kontrolü
-    if(time <= 0 && ((user.score < 10 && chosenLevel === "easy") || (user.score < 20 && chosenLevel === "hard"))) {
+    if(time <= 0 && ((user.score < 5 && chosenLevel === "easy") || (user.score < 15 && chosenLevel === "hard"))) {
         gameOver();
     }
 
     // Oyunu kazanma kontrolü
-    if((user.score >= 10 && chosenLevel === "easy") || (user.score > 20 && chosenLevel === "hard")) {
+    if((user.score >= 5 && chosenLevel === "easy") || (user.score > 15 && chosenLevel === "hard")) {
         winGame();
     }
 
@@ -211,14 +211,14 @@ function load_ball_image(x, y, w, h) {
 }
 function load_hoop_image(x, y, w, h) {
     hoopImg = new Image();
-    hoopImg.src = 'images/hoop.png'
+    hoopImg.src = 'images/hoop.png',
     hoopImg.onload = function () {
         ctx.drawImage(hoopImg, x, y, w, h);
     }
 }
 function load_hoop2_image(x, y, w, h) {
     hoopImg2 = new Image();
-    hoopImg2.src = 'images/hoop2.png'
+    hoopImg2.src = 'images/hoop2.png';
     hoopImg2.onload = function () {
         ctx.drawImage(hoopImg2, x, y, w, h);
     }
@@ -312,3 +312,11 @@ function playWinSound() {
     var winSound = document.getElementById("winSound");
     winSound.play();
 }
+
+function restart() {
+    document.getElementById("level-screen").style.display = "block";
+    document.getElementById("levelButtons").style.display = "block";
+    //document.getElementById("restart-button").style.display = "none";
+    time = minutes * 60;
+}
+
