@@ -31,12 +31,13 @@ Klavye ile hakimiyet kurulan Basketbol oyununun amacı topu basketbol potasında
 
 # Oyundan Görüntüler
 ---
-![image](https://github.com/iremerdas/BasketballGame/assets/86477685/2256f6fb-1a51-4285-a0bf-399fd02292bb)
+![image](https://github.com/iremerdas/iremerdas.github.io/assets/86477685/90bae0a4-0362-4ea5-b81b-d62559d2c3d9)
 
-![image](https://github.com/iremerdas/BasketballGame/assets/86477685/e3ebd4c4-11f9-4588-b9d8-a2e40e24ec41)
+![image](https://github.com/iremerdas/iremerdas.github.io/assets/86477685/2814a7e8-6ddf-4b9c-9c31-98a183eef72d)
 
-![image](https://github.com/iremerdas/BasketballGame/assets/86477685/e780ff29-74ec-4782-92bb-4630f45f12b7)
+![image](https://github.com/iremerdas/iremerdas.github.io/assets/86477685/3e141ef8-3969-49b1-85ea-865824432619)
 
-![image](https://github.com/iremerdas/BasketballGame/assets/86477685/c26d94e1-3092-4361-bdac-0426129f4ce9)
+![image](https://github.com/iremerdas/iremerdas.github.io/assets/86477685/da55c61e-8596-4675-94a4-629a64276f43)
 
-![image](https://github.com/iremerdas/BasketballGame/assets/86477685/c72d9cfc-ffb0-4e3d-a261-439113c71b8f)
+![image](https://github.com/iremerdas/iremerdas.github.io/assets/86477685/e5dc451e-b308-4e29-a081-cc701079ea91)
+
