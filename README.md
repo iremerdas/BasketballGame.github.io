@@ -23,7 +23,7 @@ Klavye ile hakimiyet kurulan Basketbol oyununun amacı topu basketbol potasında
 
 # Oyunun Sitesi
 ---
-iremerdas.github.io adresinden ulaşabilirsiniz
+[iremerdas.github.io](https://basketball-game-khaki.vercel.app/) adresinden ulaşabilirsiniz
 
 # Oyun Videosu
 ---
